@@ -12,9 +12,9 @@ bisal_grp = "https://t.me/+PA8OPL2Zglk3MDM1"
 
 class Var(object):
     MULTI_CLIENT = False
-    API_ID = int(getenv('API_ID', ''))
-    API_HASH = str(getenv('API_HASH', ''))
-    BOT_TOKEN = str(getenv('BOT_TOKEN' , ''))
+    API_ID = int(getenv('API_ID', '10110297'))
+    API_HASH = str(getenv('API_HASH', '45c5a500e21ddb2cec451b1e2670f4a5'))
+    BOT_TOKEN = str(getenv('BOT_TOKEN' , '7931283896:AAFXf5Cv6pBYAisqQ8D41Ph0OUySVlCx7hE'))
     name = str(getenv('name', 'bisal_file2link_bot'))
     SLEEP_THRESHOLD = int(getenv('SLEEP_THRESHOLD', '60'))
     WORKERS = int(getenv('WORKERS', '4'))
@@ -39,7 +39,7 @@ class Var(object):
         URL = "https://{}/".format(FQDN)
     else:
         URL = "http://{}/".format(FQDN)
-    DATABASE_URL = str(getenv('DATABASE_URL', ''))
+    DATABASE_URL = str(getenv('DATABASE_URL', 'mongodb+srv://kpd:@cluster0.jlje5.mongodb.net/?retryWrites=true&w=majority'))
     UPDATES_CHANNEL = str(getenv('UPDATES_CHANNEL', 'bisal_files')) 
     BANNED_CHANNELS = list(set(int(x) for x in str(getenv("BANNED_CHANNELS", "")).split()))   
     BAN_CHNL = list(set(int(x) for x in str(getenv("BAN_CHNL", "")).split()))   
